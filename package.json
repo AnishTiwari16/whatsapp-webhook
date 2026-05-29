@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "Express server for webhook handling",
-  "main": "dist/src/server.js",
+  "main": "dist/server.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "prestart": "npm run build",
-    "start": "nodemon --env-file-if-exists=.env dist/src/server.js",
+    "start": "node --env-file-if-exists=.env dist/server.js",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
