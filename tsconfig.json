@@ -13,6 +13,6 @@
     "outDir": "dist",
     "sourceMap": true
   },
-  "include": ["server.ts", "server-types.ts", "config.ts"],
+  "include": ["src/**/*.ts"],
   "exclude": ["dist", "node_modules"]
 }

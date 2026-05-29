@@ -59,7 +59,6 @@ export type IncomingWebhookBody = {
 };
 
 export type ChatResponse = {
-  thread_id?: string;
   response?: unknown;
   message?: unknown;
   [key: string]: unknown;
@@ -79,6 +78,7 @@ export type ProductItem = {
 export type ChatPayload = {
   message?: string;
   response?: string;
+  triggers_consultation?: boolean;
   routine?: {
     directions?: string;
     products?: ProductItem[];
@@ -91,6 +91,7 @@ export type AiResponse = {
   text: string;
   products: ProductItem[];
   directions: string;
+  trigger_consultation: boolean;
 };
 
 export type IncomingMessage = {
@@ -110,4 +111,7 @@ export type V2UploadResponse = {
   is_pdf?: boolean;
   error?: unknown;
   [key: string]: unknown;
+};
+export type SendWhatsAppBody = {
+  to?: string;
 };
