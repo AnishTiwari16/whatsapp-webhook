@@ -33,12 +33,9 @@ export async function sendWhatsAppWelcomeTextMessage(to: string) {
   return sendWhatsAppRequest({
     messaging_product: 'whatsapp',
       to,
-      type: 'template',
-      template: {
-        name: 'clara',
-        language: {
-          code: 'en',
-        },
+      type: 'text',
+      text: {
+        body: 'Hi',
       },
   });
 }

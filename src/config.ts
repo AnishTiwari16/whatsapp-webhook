@@ -7,4 +7,4 @@ export const DERMAGPT_API_KEY = process.env.DERMAGPT_API_KEY || 'dermagptsecretk
 export const META_API_URL = 'https://graph.facebook.com';
 export const CHAT_API_URL = 'https://waap-mservice.onrender.com/api/v1/chat';
 export const UPLOAD_FILE_URL = 'https://waap-mservice.onrender.com/api/v1/upload';
-export const META_API_VERSION = 'v20.0';
+export const META_API_VERSION = 'v25.0';
