@@ -32,11 +32,14 @@ async function sendWhatsAppRequest(payload: Record<string, unknown>) {
 export async function sendWhatsAppWelcomeTextMessage(to: string) {
   return sendWhatsAppRequest({
     messaging_product: 'whatsapp',
-      to,
-      type: 'text',
-      text: {
-        body: 'Hi',
+    to,
+    type: 'template',
+    template: {
+      name: 'hello_world',
+      language: {
+        code: 'en_US',
       },
+    },
   });
 }
 
