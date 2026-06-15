@@ -37,7 +37,7 @@ export async function sendWhatsAppWelcomeTextMessage(to: string) {
     template: {
       name: 'clara',
       language: {
-        code: 'en_US',
+        code: 'en',
       },
     },
   });
